@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 //L1
+//09.02.2021
 class SolutionL1{
 	// #1
 	public static void Solve1() {
