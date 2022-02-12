@@ -221,12 +221,24 @@ class SolutionL2{
 		System.out.println("--== Завдання №1 ==--");
 		System.out.println("Обчислення значення функції а в залежності від значень цілих змінних x та y");
 		System.out.println("a = (1 + y)(x + (y / (x^2 + 4)) / (e^(-x - 2) - (1 / (x^2 + 4)))");
-		System.out.print("Введіть значення змінної x: ");
-		int x = Main.in.nextInt();
-		System.out.print("Введіть значення змінної y: ");
-		int y = Main.in.nextInt();
+		int x,y;
 		
-		// Знаменники дробів завжди > 0 при будь-яких x та y :)
+		while(true) {
+			try {
+				System.out.print("Введіть значення змінної x: ");
+				x = Main.in.nextInt();
+				System.out.print("Введіть значення змінної y: ");
+				y = Main.in.nextInt();
+				break;
+			}
+			catch(java.util.InputMismatchException ex) {
+				System.out.println("Введені значення задані некоректно. Задайте інше значення.");
+				Main.in.skip(".*");	// regex 
+				continue;
+			}
+		}
+		
+		// Знаменники дробів завжди > 0 при будь-яких x та y
 		double a = (1.0 + y) * (x + (y / (x*x + 4.0) ) ) / (Math.exp(-1.0 * x - 2.0) + (1.0 / (x*x + 4.0) ) );
 		System.out.printf("Результат: a = %.3f",a);
 		
