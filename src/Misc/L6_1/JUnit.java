@@ -10,7 +10,7 @@ import MyLabs.SolutionP1;
 import MyUtils.SomeUtils;
 
 public class JUnit {
-	// припустима точність порівнянь
+	// ГЇГ°ГЁГЇГіГ±ГІГЁГ¬Г  ГІГ®Г·Г­ВіГ±ГІГј ГЇГ®Г°ВіГўГ­ГїГ­Гј
 	public static final double EPS = 1e-6;
 
 	@Test
@@ -23,7 +23,7 @@ public class JUnit {
 	
 	public static void TestP1_1() {
 		// Test #1
-		System.out.println("Test №1.1");
+		System.out.println("Test В№1.1");
 	{
 		byte expResult = 3;
 		Double[] arr = {6.0, 5.0, 1.0, 4.0, 6.0, 4.0};
@@ -52,7 +52,7 @@ public class JUnit {
 	}
 	
 	public static void TestP1_2() {
-		System.out.println("\nTest №1.2");
+		System.out.println("\nTest В№1.2");
 		{
 			// Test #1
 			double expResult = 0.0;
@@ -66,8 +66,8 @@ public class JUnit {
 			} 
 			System.out.println("Test #1");
 			System.out.println("Array: " + SomeUtils.ArrayToString(arr));
-			System.out.println("Excepted: " + (expResult == 0.0 ? "Неможливо обчислити добуток елементів масиву;" : expResult));
-			System.out.println("Output: " + (result == 0.0 ? "Неможливо обчислити добуток елементів масиву;" : expResult));
+			System.out.println("Excepted: " + (expResult == 0.0 ? "ГЌГҐГ¬Г®Г¦Г«ГЁГўГ® Г®ГЎГ·ГЁГ±Г«ГЁГІГЁ Г¤Г®ГЎГіГІГ®ГЄ ГҐГ«ГҐГ¬ГҐГ­ГІВіГў Г¬Г Г±ГЁГўГі;" : expResult));
+			System.out.println("Output: " + (result == 0.0 ? "ГЌГҐГ¬Г®Г¦Г«ГЁГўГ® Г®ГЎГ·ГЁГ±Г«ГЁГІГЁ Г¤Г®ГЎГіГІГ®ГЄ ГҐГ«ГҐГ¬ГҐГ­ГІВіГў Г¬Г Г±ГЁГўГі;" : expResult));
 			assertEquals(expResult, result, EPS);	
 		}
 		
@@ -84,14 +84,14 @@ public class JUnit {
 			} 
 			System.out.println("\nTest #2");
 			System.out.println("Array: " + SomeUtils.ArrayToString(arr));
-			System.out.println("Excepted: " + (expResult == 0.0 ? "Неможливо обчислити добуток елементів масиву;" : expResult));
-			System.out.println("Output: " + (result == 0.0 ? "Неможливо обчислити добуток елементів масиву;" : expResult));
+			System.out.println("Excepted: " + (expResult == 0.0 ? "ГЌГҐГ¬Г®Г¦Г«ГЁГўГ® Г®ГЎГ·ГЁГ±Г«ГЁГІГЁ Г¤Г®ГЎГіГІГ®ГЄ ГҐГ«ГҐГ¬ГҐГ­ГІВіГў Г¬Г Г±ГЁГўГі;" : expResult));
+			System.out.println("Output: " + (result == 0.0 ? "ГЌГҐГ¬Г®Г¦Г«ГЁГўГ® Г®ГЎГ·ГЁГ±Г«ГЁГІГЁ Г¤Г®ГЎГіГІГ®ГЄ ГҐГ«ГҐГ¬ГҐГ­ГІВіГў Г¬Г Г±ГЁГўГі;" : expResult));
 				assertEquals(expResult, result, EPS);
 		}
 	}
 
 	public static void TestP1_3() {
-		System.out.println("\nTest №1.3");
+		System.out.println("\nTest В№1.3");
 		{
 			// Test #1
 			Double[] expResult = {82.77, -23.8, 16.45, -43.87, -46.75, 32.28, 7.86, 25.71};
@@ -149,5 +149,3 @@ public class JUnit {
 			}
 	}
 }
-
-
